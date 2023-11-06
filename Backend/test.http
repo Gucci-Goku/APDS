@@ -1,0 +1,35 @@
+GET https://localhost:3000/api/tasks/tasks HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhbVJhbSIsInVzZXJpZCI6IjY1MjQwNGE1M2NiNWUwMjhhN2VkZTJlMCIsImlhdCI6MTY5NzAxMjk3MSwiZXhwIjoxNjk3MDIwMTcxfQ.2lIjgEY1BDW7KA0p9eS0CrHHya5Htz2uiHVqHLfZYFw
+###
+DELETE https://localhost:3000/api/tasks/tasks/6 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhbVJhbSIsInVzZXJpZCI6IjY1MjQwNGE1M2NiNWUwMjhhN2VkZTJlMCIsImlhdCI6MTY5NzAxMjk3MSwiZXhwIjoxNjk3MDIwMTcxfQ.2lIjgEY1BDW7KA0p9eS0CrHHya5Htz2uiHVqHLfZYFw
+###
+POST https://localhost:3000/api/tasks/tasks 65265f83d12db7a99dd1361c HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhbVJhbSIsInVzZXJpZCI6IjY1MjQwNGE1M2NiNWUwMjhhN2VkZTJlMCIsImlhdCI6MTY5NzAxMjk3MSwiZXhwIjoxNjk3MDIwMTcxfQ.2lIjgEY1BDW7KA0p9eS0CrHHya5Htz2uiHVqHLfZYFw
+Content-type: application/json
+
+{
+    "id": "6",
+    "name": "HR management"
+}
+
+
+
+###
+
+POST https://localhost:3000/api/users/signup 
+Content-type: application/json
+
+{
+    "username": "DaxterJack",
+    "password":"Deadpol001"
+}
+###
+
+POST https://localhost:3000/api/users/login 
+Content-type: application/json
+
+{
+    "username": "SamRam",
+    "password":"Deadpol001"
+}
