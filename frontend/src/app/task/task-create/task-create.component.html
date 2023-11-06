@@ -1,0 +1,19 @@
+<form (submit) = "onaddtask(addTask)" #addTask = "ngForm">
+<input type = "text"
+ngModel name = "enteredID"
+placeholder="Task ID"
+required
+minlength="1"
+pattern="^[a-zA-Z0-9\s_-]+$"
+#enteredID ="ngModel"/>
+<input type = "text"
+ngModel name = "enteredName"
+placeholder="Task Name"
+required
+minlength="1"
+pattern="^[a-zA-Z0-9\s_-]+$"
+#enteredName ="ngModel"
+/>
+
+<button type = "submit"> Add Task </button>
+</form>

@@ -1,0 +1,31 @@
+<form (submit)="onlogin(loginform)" #loginform="ngForm" style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f4f4f4; font-family: Arial, sans-serif;">
+    <div style="width: 300px; padding: 40px; background: #fff; border-radius: 4px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+        <h2 style="text-align: center; color: #333;">Inter-Departmental Bulletin Board</h2>
+        <input type="text" 
+               ngModel 
+               name="enteredusername" 
+               placeholder="Username" 
+               required
+               minlength="1" 
+               pattern="^[a-zA-Z0-9@*#]+$" 
+               style="width: calc(100% - 20px); padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;" 
+               #enteredusername="ngModel" />
+               <div *ngIf="enteredusername.invalid && (enteredusername.dirty || enteredusername.touched)" style="color: red;">Invalid</div>
+        <br>
+
+        <input type="password" 
+               ngModel 
+               name="enteredpassword" 
+               placeholder="Password" 
+               required
+               minlength="1"
+               pattern="^[a-zA-Z0-9@*#]+$" 
+               style="width: calc(100% - 20px); padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;" 
+               #enteredpassword="ngModel" />
+               <div *ngIf="enteredpassword.invalid && (enteredpassword.dirty || enteredpassword.touched)" style="color: red;">Invalid</div>
+        <br>
+
+        <button type="submit" style="width: 100%; padding: 10px; border: 0; background: #333; color: #fff; border-radius: 4px; cursor: pointer;" >{{option}}</button>
+    </div>
+</form>
+   
